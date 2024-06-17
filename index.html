@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub navegação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon.png.jpg" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10;
+            text-align: center;
+        }
+
+        h1 {
+            display: block;
+            background-color: rgb(251, 252, 252);
+            text-align: center;
+            border-style: solid;
+            border-width: 3pt;
+            border-color: rgb(14, 13, 14);
+            color: rgb(44, 38, 36);
+        }
+
+        h3 {
+            display: block;
+            background-color: rgb(19, 15, 17);
+        }
+
+        h5 .subtitulo {
+            display: block;
+            color: rgb(19, 15, 17);
+            background-color: white;
+            text-align: center;
+        }
+
+        body h2 {
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .subnav {
+            float: left;
+            overflow: hidden;
+        }
+
+        .subnav .subnavbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: rgb(255, 255, 255);
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .navbar a:hover,
+        .subnav:hover .subnavbtn {
+            background-color: rgb(11, 165, 11);
+        }
+
+        .subnav-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            background-color: rgb(15, 115, 173);
+            width: 100%;
+            z-index: 1;
+        }
+
+        .subnav-content a {
+            float: left;
+            color: rgb(241, 236, 241);
+            text-decoration: none;
+        }
+
+        .subnav-content a:hover {
+            background-color: #fcf7fa;
+            color: rgb(6, 5, 6);
+        }
+
+        .subnav:hover .subnav-content {
+            display: block;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px 0;
+        }
+
+        button {
+            display: inline-block;
+            background-color: rgb(49, 46, 51);
+            border-style: solid;
+            border-color: rgb(12, 9, 11);
+            border-radius: 5px;
+        }
+
+        .image-container {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .image-container p {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .caixa {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        ul,
+        ol {
+            padding-left: 20px;
+            /* Ajuste conforme necessário */
+            margin: 10px 0;
+            list-style-position: inside;
+        }
+
+        /* Responsividade */
+        .navbar img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* Razão de aspecto 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .navbar a,
+            .subnav .subnavbtn {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+
+        s
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#home# " "><img src="imagem 02/Imagem Principal.png" alt="História dos Dinossauros"></a>
+    </div>
+
+
+
+    <div class="navbar">
+        <div class="subnav">
+            <button class="subnavbtn">Historia<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="https://www.todamateria.com.br/periodo-jurassico/" target="_blank">Era Jurássico</a>
+
+                <a href="https://www.estadao.com.br/ciencia/como-os-dinossauros-foram-extintos-poeira-pode-ser-a-resposta-diz-estudo-entenda-nprm/#:~:text=Durante%20d%C3%A9cadas%2C%20os%20cientistas%20souberam,incluindo%20quase%20todos%20os%20dinossauros."
+                    target="_blank">Extição</a>
+
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Ciência<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="https://www.cnnbrasil.com.br/tecnologia/descoberta-do-1o-dinossauro-completa-200-anos-em-2024-saiba-como-era-o-animal/"
+                    target="_blank">como surgio os dinossauro </a>
+
+                <a href="https://www.nationalgeographicbrasil.com/ciencia/2024/04/cientistas-descobrem-um-novo-titanossauro-de-7-toneladas-que-viveu-no-sul-da-argentina"
+                    target="_blank">novas descobertas 2024</a>
+            </div>
+        </div>
+
+        <div class="subnav">
+            <button class="subnavbtn">Filmes <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="https://www.youtube.com/watch?v=lc0UehYemQA" target="_blank">13 de junho de 1993 lançamento
+                    parque dos dinoussaros</a>
+                <a href="https://www.youtube.com/watch?v=jBGCPEWvRmg" target="_blank">Em Busca Do Vale Encantado</a>
+                <a href="https://www.youtube.com/watch?v=WvhdFg0E_UM&t=2440s" target="_blank">ilha dos
+                    dinossauros</a>
+                <a href="https://www.google.com/search?client=firefox-b-e&sca_esv=4b05976ec6fa0ef5&sca_upv=1&sxsrf=ADLYWIIl9K7RYnCSGNc-jJFfMsMOYR1xhg:1715647430357&q=franquia+do+filme+jurassic+park&tbm=vid&source=lnms&sa=X&ved=2ahUKEwjftJXd9IuGAxVoILkGHU1_AUQQ0pQJegQIChAB&biw=1600&bih=775&dpr=1#fpstate=ive&vld=cid:695496ac,vid:3wU0-JF6WAE,st:0"
+                    target="_blank">novo filme 2025</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Contato<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="" target="_blank" onclick="javascript:alert('urgente')">Telefone</a>
+
+                <a>E-mail</a>
+            </div>
+        </div>
+
+        <div class="subnav">
+            <button class="subnavbtn"><a href="https://forms.gle/1P51vTxW8nFNPazSA" target="_blank">Cadastre-se</a></i>
+            </button>
+        </div>
+
+        <div class="subnav">
+            <button class="subnavbtn" onclick="alert('Bem vindo!')">Clique aqui!</i>
+            </button>
+        </div>
+    </div>
+
+    <div style="padding:0 16px">
+
+    </div>
+    <h1>Pré Historia dos Dinossauros </h1>
+
+    <h2>Pré Historia</h2>
+
+    <P>Quando o primeiro hominídeo surgiu na face da Terra, os curiosos animais jurássicos já haviam desaparecido há
+        mais de 60
+        milhões de anos. O termo dinossauro, do grego deinos saurus, significa “lagarto terrível”, apesar de a
+        maioria não ser
+        tão terrível e não ser muito parecidos com lagartos. Alguns eram herbívoros, outros carnívoros.
+
+        Teoricamente, os dinossauros surgiram no período Jurássico, na Era Mesozoica. Alguns cientistas os
+        consideram criaturas
+        únicas, uma classe intermediária aos répteis e aves. Eles possuíam pele escamosa, punham ovos com casca,
+        eram
+        caracterizados por longas e fortes caudas e dentes homogêneos. Suas patas estavam posicionadas logo abaixo
+        do tronco e
+        seu metabolismo se mantinha constante, não dependendo da temperatura do meio externo.</P>
+    <div class="caixa">
+        <div class="fundo">
+            <img src="imagem 02/IMAGEM 01.jpg" alt="Dino 01">
+        </div>
+    </div>
+
+
+    <H2>Dinoussaro Brasileiros </H2>
+
+    <P>Existem algumas espécies de dinossauros que habitaram o que são, atualmente, as regiões brasileiras. Dentre
+        eles,
+        estavam o Espinossauro (fósseis encontrados no Ceará), o Abelissauro (fósseis encontrados em Minas Gerais e
+        São Paulo),
+        o Carnossauro (fósseis encontrados em Mato Grosso, Paraíba e Bahia), o Celurossauro (fósseis encontrados em
+        São Paulo),
+        o Estauricossauro (fósseis encontrados no Rio Grande do Sul), o Iguanodonte (fósseis encontrados na Paraíba)
+        e o
+        Tiranossauro (fósseis encontrados em São Paulo, Goiás, Minas Gerais e Mato Grosso).
+
+
+        Em janeiro de 2006, foi anunciada a descoberta do Adamantisaurus mezzalirai, dinossauro de pescoço longo
+        (saurópode) e
+        herbívoro. Viveu há 70 milhões de anos, tinha 4 m de altura no dorso, 10 a 15 m de comprimento e pesava de 8
+        a 12
+        toneladas. Em abril do mesmo ano mais dois dinossauros do mesmo grupo foram apresentados à comunidade
+        científica, o
+        Baurutitan britoi e o Trigonosaurus pricei, que viveram onde é hoje Peirópolis, perto de Uberaba (MG).
+        O maior dos dinossauros brasileiros teve sua descoberta anunciada em agosto de 2006. Trata-se do
+        Maxakalisaurus topai,
+        de 13 m de comprimento, herbívoro, que viveu há 80 milhões de anos onde é hoje Prata, em Minas Gerais.
+
+    <div class="caixa">
+        <div class="fundo">
+            <img src="imagem 02/brasil.jpg" alt="Brasil">
+        </div>
+    </div>
+    Outra descoberta foi anunciada em novembro de 2006. Foi o Sacisaurus agudoensis, um dos dinossauros mais
+    antigos do
+    mundo, que viveu há 220 milhões de anos onde é hoje o Município de Agudo, no Rio Grande do Sul. Tinha 1,5 m
+    de
+    comprimento. Outros dinossauros brasileiros são o Gondwanatitan fastoi, descoberto em 1985 e descrito em
+    1999, e o
+    Angaturama limai.
+    No Município de Sousa, na Paraíba, a 400 km de João Pessoa, está o Vale dos Dinossauros, inaugurado em 1998.
+    Ele detém
+    três recordes mundiais: o maior número de trilhas de dinossauros (505), o maior número de espécies
+    identificadas (51) e
+    o maior número de camadas de rocha sedimentar com pegadas desses animais (61). Uma das trilhas com pegadas
+    de
+    dinossauros tem 46 m de extensão, em linha reta, mostrando rastros de mais de 50 cm de comprimento e 10 cm
+    de
+    profundidade (foto à direita) registrados na lama em que o animal pisou. É a maior trilha de animais
+    pré-históricos que
+    se conhece no mundo. No Parque dos Dinossauros, o público pode ver não só as pegadas, mas também réplicas em
+    fibra de
+    vidro das principais espécies desses répteis.
+    Há pegadas de dinossauro também no Rio Grande do Sul. Elas foram descobertas em novembro de 2001, no
+    Município de
+    Sant'Ana do Livramento, na fronteira com o Uruguai. São quatro conjuntos de pegadas provavelmente deixados
+    por uma
+    família, pois dois deles deixaram pegadas menores que as dos outros dois. Elas são arredondadas e variam de
+    20 a 30 cm
+    de diâmetro. No início de 2002, os mesmos pesquisadores descobriram outra trilha na mesma região, dessa vez
+    no Município
+    de Rosário do Sul, com pegadas de 15 a 40 cm, talvez de animais diferentes. No Maranhão e em São Paulo há
+    igualmente
+    rastros fossilizados de dinossauros.
+    A descoberta mais recente de dinossauro no Brasil foi divulgada em novembro de 2018, na revista britânica
+    Biology
+    Letters. Trata-se do Macrocollum itaquii, É mais um dinossauro descoberto no município de Agudo, e o mais
+    antigo (225
+    milhões de anos) dinossauro de pescoço longo (daí o nome Macrocollum) desco-berto no mundo. Foram
+    encontrados vários
+    esqueletos, alguns deles completos, o que ainda não havia ocorrido com os dinos descobertos no Brasil.
+
+    </P>
+    <div class="caixa">
+        <div class="fundo">
+            <img src="imagem 02/brasil_dinossauro.jpg" alt="HISTORIA BRASIL MAP">
+        </div>
+    </div>
+    <h2>Evolução </h2>
+
+    <p>O período Triássico, que começou 248 milhões de anos atrás e durou 40 milhões de anos, é o início da era
+        Mesozoica, a
+        Era dos Dinossauros. Nessa fase da história da Terra, os continentes estavam todos unidos num só, o qual os
+        geólogos
+        chamam de Pangeia, palavra que significa todas as terras. O único oceano que havia então recebeu dos
+        geólogos o nome de
+        Pantalassa (todos os mares). As plantas com flores ainda não existiam nesse período.
+
+        Os primeiros dinossauros apareceram na face da Terra há cerca de 230 milhões de anos, mais ou menos na
+        metade do
+        Triássico. Foram os gêneros herrerasaurus e staurikosaurus. Em outubro de 1991, um estudante descobriu na
+        Argentina o
+        eoraptor, dinossauro de 225 milhões de anos, 90 cm de comprimento e 11 kg. Ele mostra que os dinossauros
+        eram
+        inicialmente pequenos, carnívoros e bípedes. O herrerasaurus foi descoberto no mesmo local e tem idade
+        semelhante, mas o
+        eoraptor tem características mais primitivas.
+
+        Quando o Triássico terminou, os dinossauros já dominavam a Pangeia. Como havia um só continente, os
+        dinossauros desse
+        período, como o allosaurus, ocuparam toda a Terra.
+
+        O período seguinte, o Jurássico, começou 208 milhões de anos atrás e terminou há 144 milhões de anos (durou,
+        portanto,
+        64 milhões de anos). Nesse período, aquele continente único dividiu-se em dois: Laurásia (compreendendo
+        América do
+        Norte, Europa e Ásia) e Gondwana (América do Sul, África, Austrália, Oceania, Antártica e Índia). O oceano
+        que os
+        separava é hoje chamado de Tétis.
+
+        O nível das águas subiu e alagou grandes extensões de terras baixas. O clima era quente e úmido e surgiram
+        as primeiras
+        plantas com flor. Apareceram as sequoias, árvores gigantescas que existem até hoje.
+
+        Com essa riqueza de vegetais, dinossauros herbívoros, como os sauropoda e os stegossauria, também
+        proliferaram. Mas os
+        carnívoros continuaram a se expandir sobre a Terra.
+
+        No Cretáceo, iniciado há 144 milhões de anos, a Laurásia e o Gondwana se fragmentaram, dando origem aos
+        continentes
+        atuais, com forma semelhante à que têm hoje. O clima continuava úmido, mas com estações do ano mais
+        definidas.
+
+        Os dinossauros exibiam enorme diversidade e havia diferenças entre os do hemisfério sul e os do hemisfério
+        norte. Os do
+        sul tendiam a ser maiores e mais primitivos que seus contemporâneos do norte. Mais de metade das espécies
+        conhecidas
+        viviam nesse período, porém há 65 milhões de anos eles desapareceram completamente, junto com muitas outras
+        espécies.
+        Essa extinção em massa é o evento usado pelos geólogos para marcar o fim do período Cretáceo e da Era
+        Mesozoica.
+
+        Dinossauros do Triássico
+
+    <div class="caixa">
+        <div class="fundo">
+
+            <div class="image-container">
+                <h5 class="subtitulo">Dinossauros do Triássico</h5>
+                <img src="imagem 02/10.jpg" alt="Eoraptor">
+                <p>Eoraptor </p>
+            </div>
+
+
+            <div class="image-container">
+                <h5 class="subtitulo">Dinossauros do Jurássico</h5>
+                <img src="imagem 02/dinos_jurassico_1.jpg" alt="Coelophysis">
+                <p>Coelophysis </p>
+            </div>
+
+
+            <div class="image-container">
+                <h5 class="subtitulo">Saltassauro, dinossauro do Cretáceo, que viveu onde é hoje a Argentina</h5>
+                <img src="imagem 02/Cretáceo 02.png" alt="Technosaurus">
+                <p>Technosaurus </p>
+            </div>
+
+            <div class="image-container">
+                <h5 class="subtitulo">Outros Dinossauros do Cretáceo</h5>
+                <img src="imagem 02/Cretáceo.jpg" alt="Stegosaurus">
+                <p>Stegosaurus </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <ul>
+            <li><a href="https://pt.wikipedia.org/wiki/Tiranossauro">T- rex</a></li>
+            <li><a href="https://www.wikidata.org/wiki/Q868185">Celofisídeo</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Braquiossauro">Braquiossauro</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Anquilossauro">Anquilossauro</a></li>
+        </ul>
+
+        <ol>
+            <li>Cretáceo era Mesozoica</li>
+            <li>Triássico</li>
+            <li>Jurássico</li>
+            <li>Cretáceo</li>
+        </ol>
+
+        <hr>
+
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/hcv_8WXSetM?si=M3PmdnrWaCmPjnJD" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p> Eraldo José D. Deki.</p>
+    </footer>
+</body>
+
+</html>
